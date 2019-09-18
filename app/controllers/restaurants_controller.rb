@@ -28,6 +28,7 @@ class RestaurantsController < ApplicationController
   def filter_by_category
 	  @restaurants = @restaurants.select do |r|
 	   r.category.title == params[:category]
+		end
 	end
 	
 
